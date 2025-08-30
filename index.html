@@ -319,10 +319,32 @@
     </div>
     <div class="top-fields">
         <label>Date:<input type="date" id="visite-date" value=""></label>
-        <label>Bateau:<input type="text" id="chantier" placeholder="Nom du bateau"></label>
-        <label>Animateur du QHP:<input type="text" id="chantier"></label>
+        <label> Bateau:                          
+            <select id="choixBateau">
+            <option>COMEBACK</option>
+            <option>CALIMERO</option>
+            <option>JPPH</option>
+            <option>LE LEM</option>
+            <option>PIRATE</option>
+            <option>TORNADE</option>
+            <option>TCHIKIBOUM</option>
+            <option>TRUCKER</option>
+            <option>LE QUATAR</option>  
+            </select>
+        </label>
+        <label>Animateur du QHP:<input type="text" id="chantier" placeholder="Sébatien LEGLAS"></label>
         <label>Thématiques HSE abordées: <textarea class="theme" type="text"></textarea></label>
     </div>
+        <table class="aligned-table">
+        <th>Observations: </th>
+        <tr>
+            <td>
+                <div class="large-row">
+                    <textarea class="input-bilan" type="text"></textarea>
+                </div>
+            </td>
+        </tr>
+    </table>
 
         <table class="aligned-table">
         <th>Signatures: </th>
@@ -335,24 +357,14 @@
         </tr>
     </table>
 
-    <table class="aligned-table">
-        <th>Mes attentes HSE suite au QHP: </th>
-        <tr>
-            <td>
-                <div class="large-row">
-                    <textarea class="input-bilan" type="text"></textarea>
-                </div>
-            </td>
-        </tr>
-    </table>
-
     <div class="buttons">
         <button class="export" onclick="print()">Exporter</button>
     </div>
 
     <script>
-
-
+       window.onload = function () {
+            document.getElementById('visite-date').valueAsDate = new Date();
+       }
         function setupCanvas(canvasId) {
             const canvas = document.getElementById(canvasId);
             const ctx = canvas.getContext('2d');
