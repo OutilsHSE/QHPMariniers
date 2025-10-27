@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
-    <title>Quart d'heure prevention (QHP)</title>
+    <title>Observations HSE</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -179,6 +179,7 @@
 
         .input-bilan {
             width: 100%;
+            min-height: 400px;
             resize: vertical;
             box-sizing: border-box;
             border: 1px solid #aaa;
@@ -315,7 +316,7 @@
 <body>
     <div class="container">
         <img class="logo" src="CDES_Logo.png" alt="">
-        <h1> Quart d'heure prevention (QHP)</h1>
+        <h1> Observations HSE</h1>
     </div>
     <div class="top-fields">
         <label>Date:<input type="date" id="visite-date" value=""></label>
@@ -332,7 +333,7 @@
             <option>LE QUATAR</option>  
             </select>
         </label>
-        <label>Animateur du QHP:<input type="text" id="chantier" placeholder="Sébatien LEGLAS"></label>
+        <label>Encadrant:<input type="text" id="chantier" placeholder="Sébatien LEGLAS"></label>
         <label>Thématiques HSE abordées: <textarea class="theme" type="text"></textarea></label>
     </div>
         <table class="aligned-table">
@@ -345,7 +346,8 @@
             </td>
         </tr>
     </table>
-
+    <label>Nom Prenom:<input type="text" id="nom-prenom"></label><br>
+    <div> <h5>Je prends connaissance des observations émises et les applique.</h5></div>
         <table class="aligned-table">
         <th>Signatures: </th>
         <tr>
