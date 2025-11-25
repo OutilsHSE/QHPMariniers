@@ -1,5 +1,16 @@
 window.onload = function () {
             document.getElementById('visite-date').valueAsDate = new Date();
+            localStorage.clear();
+            // Efface tout le sessionStorage
+            sessionStorage.clear();
+
+            window.addEventListener("load", () => {
+
+                // Si tu veux aussi vider tous les inputs et textarea
+                document.querySelectorAll("input, textarea").forEach(el => {
+                el.value = "";
+                });
+            });
        }
         function setupCanvas(canvasId) {
             const canvas = document.getElementById(canvasId);
