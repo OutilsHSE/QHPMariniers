@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Formulaire de Quart d'heure prévention (QHP) pour la gestion HSE des bateaux CDES">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
     <title>Quart d'heure prevention (QHP)</title>
     <link rel="stylesheet" href="index.css">
@@ -11,13 +12,13 @@
 
 <body>
     <div class="container">
-        <img class="logo" src="CDES_Logo.png" alt="">
+        <img class="logo" src="CDES_Logo.png" alt="Logo CDES">
         <h1> Quart d'heure prevention (QHP)</h1>
     </div>
     <div class="top-fields">
-        <label>Date:<input type="date" id="visite-date" value=""></label>
-        <label> Bateau:                          
-            <select id="choixBateau">
+        <label>Date:<input type="date" id="visite-date" name="visite-date" value=""></label>
+        <label> Bateau:
+            <select id="choixBateau" name="choixBateau">
             <option>COMEBACK</option>
             <option>CALIMERO</option>
             <option>JPPH</option>
@@ -26,20 +27,20 @@
             <option>TORNADE</option>
             <option>TCHIKIBOUM</option>
             <option>TRUCKER</option>
-            <option>LE CATHARE</option>  
+            <option>LE CATHARE</option>
             <option>ISO</option>
-            <option>CONADA</option>      
+            <option>CONADA</option>
             </select>
         </label>
-        <label>Animateur du QHP:<input type="text" id="chantier" placeholder="Sébatien LEGLAS"></label>
-        <label>Thématiques HSE abordées: <textarea class="theme" type="text"></textarea></label>
+        <label>Animateur du QHP:<input type="text" id="chantier" name="chantier" placeholder="Sébastien LEGLAS"></label>
+        <label>Thématiques HSE abordées: <textarea id="thematiques-hse" name="thematiques-hse" class="theme"></textarea></label>
     </div>
         <table class="aligned-table">
         <th>Observations: </th>
         <tr>
             <td>
                 <div class="large-row">
-                    <textarea class="input-bilan" type="text"></textarea>
+                    <textarea id="observations" name="observations" class="input-bilan"></textarea>
                 </div>
             </td>
         </tr>

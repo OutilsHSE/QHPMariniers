@@ -2,18 +2,15 @@
             font-family: Arial, sans-serif;
             margin: 0;
             margin-left: 10px;
-            font-size: 14px;
-
             padding: 0;
+            font-size: 14px;
         }
 
 
         .top-fields {
             display: flex;
-            flex-wrap: wrap;
-            /* Permettre aux éléments de passer à la ligne si nécessaire */
-            gap: 20px;
-            /* Espace entre les éléments */
+            flex-wrap: wrap; /* Permettre aux éléments de passer à la ligne si nécessaire */
+            gap: 20px; /* Espace entre les éléments */
             margin-bottom: 20px;
             align-items: baseline;
         }
@@ -26,29 +23,23 @@
         }
 
         .top-fields input {
-            margin-left: 10px;
-            /* Espace entre le label et l'input */
-            flex: 1;
-            /* Permettre à l'input de prendre l'espace disponible */
+            margin-left: 10px; /* Espace entre le label et l'input */
+            flex: 1; /* Permettre à l'input de prendre l'espace disponible */
         }
 
         /* Style pour les petits écrans */
         @media (max-width: 600px) {
             .top-fields {
-                flex-direction: column;
-                /* Disposer les éléments en colonne */
-                align-items: flex-start;
-                /* Aligner les éléments à gauche */
+                flex-direction: column; /* Disposer les éléments en colonne */
+                align-items: flex-start; /* Aligner les éléments à gauche */
             }
 
             .top-fields label {
-                width: 100%;
-                /* Prendre toute la largeur disponible */
+                width: 100%; /* Prendre toute la largeur disponible */
             }
 
             .top-fields input {
-                width: calc(100% - 10px);
-                /* Ajuster la largeur de l'input pour tenir compte de la marge */
+                width: calc(100% - 10px); /* Ajuster la largeur de l'input pour tenir compte de la marge */
             }
         }
 
@@ -64,8 +55,7 @@
             border: 1px solid #ccc;
             padding: 8px;
             text-align: center;
-            width: 33.33%;
-            /* Pour 3 colonnes égales */
+            width: 33.33%; /* Pour 3 colonnes égales */
         }
 
 
@@ -95,41 +85,20 @@
             margin-bottom: 10px;
         }
 
-        /*Conteneur principal utilisant Flexbox */
+        /* Conteneur principal utilisant Flexbox */
         .container {
             display: flex;
             align-items: center;
-            /* Espacer les éléments uniformément */
-            /* Ajouter un peu de padding autour du conteneur */
             margin-bottom: 50px;
             background-color: rgb(116, 204, 239);
         }
 
         /* Styles pour les images */
         .logo {
-            max-width: 100px;
-            /* Ajuster la taille des images selon vos besoins */
-            height: auto;
-            /* Maintenir les proportions des images */
+            max-width: 100px; /* Ajuster la taille des images selon vos besoins */
+            height: auto; /* Maintenir les proportions des images */
         }
 
-        @media (max-width: 600px) {
-            .regles {
-                max-width: 250px;
-                /* Ajuster la taille des images selon vos besoins */
-                height: auto;
-                /* Maintenir les proportions des images */
-            }
-        }
-
-        @media (min-width: 1200px) {
-            .regles {
-                max-width: 500px;
-                /* Ajuster la taille des images selon vos besoins */
-                height: auto;
-                /* Maintenir les proportions des images */
-            }
-        }
 
         /* Style pour le titre */
         h1 {
@@ -141,8 +110,7 @@
         /* Pour les écrans de largeur supérieure à 1200px */
         @media (min-width: 1200px) {
             input::placeholder {
-                font-size: 1.0rem;
-                /* Taille plus grande pour les grands écrans */
+                font-size: 1.0rem; /* Taille plus grande pour les grands écrans */
             }
         }
 
@@ -162,10 +130,8 @@
 
         td input[type="text"] {
             width: 100%;
-            box-sizing: border-box;
-            /* pour inclure padding + bordure dans la largeur */
-            height: 50px;
-            /* optionnel : pour uniformiser la hauteur aussi */
+            box-sizing: border-box; /* Inclure padding + bordure dans la largeur */
+            height: 50px; /* Uniformiser la hauteur */
         }
 
         .input-bilan {
@@ -192,8 +158,7 @@
             }
 
             .aligned-table th {
-                background-color: #f0f0f0;
-                /* Exemple de couleur de fond pour les en-têtes */
+                background-color: #f0f0f0; /* Couleur de fond pour les en-têtes */
                 font-weight: bold;
             }
         }
@@ -216,16 +181,11 @@
         input[type="text"] {
             width: 100%;
             height: 25px;
-            box-sizing: border-box;
-            /* Assure que le padding et la bordure sont inclus dans la largeur */
+            box-sizing: border-box; /* Assure que le padding et la bordure sont inclus dans la largeur */
         }
 
         .input-bilan {
             height: 100px;
-        }
-
-        #flash {
-            width: 42.5rem;
         }
 
         .theme {
